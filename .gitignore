@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.db
+
+# private study notes, not part of the submission
+NARRATIVE.md
