@@ -171,6 +171,21 @@ real site decision; it is here because it is a free, keyless source.
 Assumption: if both an address and coordinates are sent, the coordinates are
 used and the address is kept as a note.
 
+## Time spent
+
+About 3–4 hours in total, over 2 and 3 October: building, testing against the
+live services, and reviewing the code.
+
+## AI use
+
+I used Claude Code (an AI coding assistant) throughout. It drafted most of the
+code, the tests and this README from my direction. I checked its work by
+calling each API by hand first (`scripts/probe_apis.py`) and writing the
+parsers against those real responses; by running the tests and deliberately
+planting the "missing value counts as 0" bug to confirm 7 tests fail on it;
+by breaking a source URL on purpose and checking the UI; and by running the
+README steps from a fresh copy. I have read every file and can explain each part.
+
 ## Project layout
 
 ```
